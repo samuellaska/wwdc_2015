@@ -14,9 +14,3 @@ To the end I added option to actually type in an response that would be delivere
 in goodbye you would be brought back to home screen.
 
 ![intro](screen1.png)
-
-![hello](screen2.png)
-
-![long story short](screen3.png)
-
-![slovakia](screen4.png)
