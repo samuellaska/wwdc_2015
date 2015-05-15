@@ -13,10 +13,7 @@ frequently to make conversation more personal and colorful. I may have left some
 To the end I added option to actually type in an response that would be delivered to my email. After typing 
 in goodbye you would be brought back to home screen.
 
-![intro](screen1.png)
-
-![hello](screen2.png)
-
-![long story short](screen3.png)
-
-![slovakia](screen4.png)
+                                 |
+-------------------------------- | ------------------------
+![intro](screen1.png)            | ![hello](screen2.png)
+![long story short](screen3.png) | ![slovakia](screen4.png)
