@@ -22,7 +22,7 @@
 #import "NSBundle+JSQMessages.h"
 
 
-const CGFloat kJSQMessagesLoadEarlierHeaderViewHeight = 32.0f;
+const CGFloat kJSQMessagesLoadEarlierHeaderViewHeight = 52.0f;
 
 
 @interface JSQMessagesLoadEarlierHeaderView ()

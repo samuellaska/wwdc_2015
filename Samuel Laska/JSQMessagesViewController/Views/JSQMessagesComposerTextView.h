@@ -34,6 +34,8 @@
  */
 @property (strong, nonatomic) UIColor *placeHolderTextColor;
 
+@property BOOL userEnabled;
+
 /**
  *  Determines whether or not the text view contains text after trimming white space 
  *  from the front and back of its string.

@@ -41,6 +41,11 @@
 
 #pragma mark - Initialization
 
+- (BOOL)canBecomeFirstResponder
+{
+    return self.userEnabled;
+}
+
 - (void)jsq_configureTextView
 {
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];

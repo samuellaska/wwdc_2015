@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Container Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ContainerController" customModule="Samuel_Laska" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,6 +21,176 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="454" y="205"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="HHd-Qx-Qfo">
+            <objects>
+                <viewController storyboardIdentifier="WWDCViewController" id="OeH-cv-Sk0" customClass="WWDCController" customModule="Samuel_Laska" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4RA-79-TNc"/>
+                        <viewControllerLayoutGuide type="bottom" id="WnN-Jw-kTv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mPX-35-0Ra">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9g6-yy-wtn">
+                                <rect key="frame" x="225" y="529" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Ixo-T7-MQf"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="△">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="swipe up">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="△">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wh-3f-jfE">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="FVE-ho-C6s"/>
+                                    <constraint firstAttribute="height" constant="150" id="tJt-Mw-gTe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <state key="normal" title="Tap!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="triggerAnimation:" destination="OeH-cv-Sk0" eventType="touchUpInside" id="ucl-dX-hqX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-N3-cdR">
+                                <rect key="frame" x="257" y="330" width="87" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="for">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" WWDC">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="15">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uab-DJ-vJx">
+                                <rect key="frame" x="111" y="279" width="378" height="43"/>
+                                <string key="text">Samuel's humble
+scholarship app</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtQ-Pq-9Bg">
+                                <rect key="frame" x="279" y="247" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LlQ-nz-TOy"/>
+                                    <constraint firstAttribute="width" constant="42" id="U7w-3k-Nhb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StD-gb-bOY">
+                                <rect key="frame" x="236" y="50" width="129" height="30"/>
+                                <state key="normal" title="Reset to beginning">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetToBeginning:" destination="OeH-cv-Sk0" eventType="touchUpInside" id="euR-pp-OB7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Uab-DJ-vJx" secondAttribute="centerY" id="1UR-Sk-ktt"/>
+                            <constraint firstAttribute="centerX" secondItem="9g6-yy-wtn" secondAttribute="centerX" id="4vE-8m-mUq"/>
+                            <constraint firstAttribute="centerX" secondItem="Uab-DJ-vJx" secondAttribute="centerX" id="CVG-eQ-wPc"/>
+                            <constraint firstAttribute="centerY" secondItem="gxN-N3-cdR" secondAttribute="centerY" id="Gj2-U5-Zag"/>
+                            <constraint firstItem="StD-gb-bOY" firstAttribute="top" secondItem="4RA-79-TNc" secondAttribute="bottom" constant="30" id="Ljh-px-mo4"/>
+                            <constraint firstItem="gxN-N3-cdR" firstAttribute="top" secondItem="Uab-DJ-vJx" secondAttribute="bottom" constant="8" id="TWd-FP-Vw5"/>
+                            <constraint firstAttribute="centerX" secondItem="gxN-N3-cdR" secondAttribute="centerX" id="X6n-sD-lSO"/>
+                            <constraint firstAttribute="centerY" secondItem="9wh-3f-jfE" secondAttribute="centerY" id="cPN-Pk-EAe"/>
+                            <constraint firstAttribute="centerX" secondItem="9wh-3f-jfE" secondAttribute="centerX" id="di7-HK-hXV"/>
+                            <constraint firstItem="WnN-Jw-kTv" firstAttribute="top" secondItem="9g6-yy-wtn" secondAttribute="bottom" constant="50" id="fGL-HC-69y"/>
+                            <constraint firstItem="Uab-DJ-vJx" firstAttribute="leading" secondItem="mPX-35-0Ra" secondAttribute="leadingMargin" constant="95" id="gQW-oy-nDl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uab-DJ-vJx" secondAttribute="trailing" constant="95" id="nqO-r3-li2"/>
+                            <constraint firstAttribute="centerX" secondItem="StD-gb-bOY" secondAttribute="centerX" id="o8t-i2-0LJ"/>
+                            <constraint firstAttribute="centerX" secondItem="CtQ-Pq-9Bg" secondAttribute="centerX" id="oWv-XO-18t"/>
+                            <constraint firstItem="Uab-DJ-vJx" firstAttribute="top" secondItem="CtQ-Pq-9Bg" secondAttribute="bottom" constant="2" id="rKW-d5-sVJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CVG-eQ-wPc"/>
+                                <exclude reference="Gj2-U5-Zag"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="gxN-N3-cdR" id="9LZ-W7-oWo"/>
+                        <outlet property="middleLabel" destination="Uab-DJ-vJx" id="m5G-7J-QNH"/>
+                        <outlet property="resetButton" destination="StD-gb-bOY" id="Jxp-WV-rER"/>
+                        <outlet property="swipeUpLabel" destination="9g6-yy-wtn" id="3vD-eU-lDd"/>
+                        <outlet property="tapButton" destination="9wh-3f-jfE" id="dff-oR-YCd"/>
+                        <outlet property="topLabel" destination="CtQ-Pq-9Bg" id="ctZ-Jg-ZnN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JYi-0d-MkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="205"/>
         </scene>
     </scenes>
 </document>
